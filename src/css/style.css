@@ -1,0 +1,487 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+/* Заголовки разделов
+=================*/
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1c2534;
+    padding: 105px 0px 94px 0px;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 72px;
+    padding-top: 30px;
+    border-bottom: 4px solid #d17700;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Container
+=================*/
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header
+=================*/
+.header {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
+    padding: 20px 0px 25px;
+    background-color: #344051;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    transform: scale(1);
+}
+
+/* Nav
+=================*/
+.nav,
+.nav > a:visited {
+    display: flex;
+}
+
+.nav_link,
+.nav > a:visited {
+    opacity: 0;
+    color: #ffffff;
+    margin-left: 40px;
+    position: relative;
+    font-size: 14px;
+}
+
+.nav_link:first-child {
+    margin-left: 0px;
+    display: inline-block;
+    transform: scale(1);
+}
+
+/* Intro
+=================*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1010px;
+    padding-top: 60px;
+    background: url(../img/профиль.png) right bottom/auto 70% no-repeat, url(../img/фон.png) left top/cover no-repeat;
+}
+
+.intro_inner {
+    width: 50%;
+    max-width: 570 px;
+}
+
+.intro_inner > h1 {
+    opacity: 0;
+    font-size: 54px;
+    font-weight: bold;
+    color: #2c384a;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.intro_inner > h2 {
+    opacity: 0;
+    font-size: 15px;
+    color: #828a95;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* Botton
+=================*/
+.botton {
+    text-align: center;
+}
+
+.botton input {
+    cursor: pointer;
+    opacity: 0;
+    font-size: 12px;
+    color: #6d7682;
+    text-transform: uppercase;
+    border: 2px solid #6d7682;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 12px;
+    margin-left: 12px;
+}
+
+/* Info
+=================*/
+.info {
+    width: 100%;
+    height: 100%;
+    height: 715px;
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    color: #3f495a;
+}
+.foto {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.knopka {
+    width: 165px;
+    border: 2px solid #3f495a;
+    font-size: 15px;
+    border-radius: 5px;
+    background: white;
+    padding: 8px;
+    margin: 35px auto;
+    text-align: center;
+}
+
+.info a {
+    color: #3f495a;
+}
+cell img{
+     transform: scale(1);
+}
+/* Skills
+=================*/
+.skills {
+    height: 520px;
+    background: url(../img/картинкафона.png) left top/cover;
+}
+
+.container_cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+}
+
+h4 {
+    color: #cf7600;
+    padding: 35px 0px 20px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.cell {
+    color: #3f495a;
+    max-width: 220px;
+    font-size: 10px;
+    margin-left: 80px;
+}
+
+.cell:first-child {
+    margin-left: 0px;
+}
+
+/* CASE
+=================*/
+h5 {
+    text-align: center;
+    margin: -20px 0px 40px;
+    color: #3f495a;
+}
+
+.case_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.case img {
+    max-width: 1100px;
+    margin-bottom: 15px;
+}
+
+.case_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.web_client {
+    width: 100%;
+    max-width: 290px;
+}
+
+.zagolovok {
+    font-size: 16px;
+    color: #384354;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    font-weight: bolder;
+}
+
+.text {
+    color: #636a76;
+    font-size: 10px;
+    padding-bottom: 15px;
+}
+
+.case_inner a {
+    color: white;
+    width: 200px;
+    border: 2px solid #63b5ae;
+    font-size: 15px;
+    background: #63b5ae;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.namepj {
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #3f495a;
+}
+
+.textpj {
+    color: #3f495a;
+    font-size: 14px;
+}
+
+/* CALC
+=================*/
+.calc {
+    width: 100%;
+    height: 100%;
+    max-width: 890px;
+    min-height: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h6 {
+    font-size: 33px;
+    color: #1c2534;
+    text-align: center;
+    padding: 55px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+}
+
+.calc_inner select {
+    margin: 25px 0px;
+    font-size: 12px;
+    width: 100%;
+    background: #eeeeee;
+    border: 3px solid #eeeeee;
+    padding: 12px;
+    color: #878787;
+}
+
+.parametr {
+    color: #1c2534;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.calc_inner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 890px;
+    padding-top: 8px;
+    border-bottom: 2px solid #d1d1d1;
+    position: absolute;
+}
+
+.itog {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1c2534;
+}
+
+.nameDP {
+    padding-top: 20px;
+}
+
+.itogDP {
+    padding-top: 20px;
+}
+
+/* Statistic
+=================*/
+.statistic {
+    background: url(../img/fon.png) left top/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 25px 0px;
+}
+
+.Parametrn {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* reviews
+=================*/
+.reviews {
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.reviews_inter {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #243042;
+}
+
+.comment {
+    margin: 25px 0px;
+}
+
+.commentator {
+    font-weight: bold;
+}
+
+/* contact
+=================*/
+.contact {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: url(../img/fonend.png) left top/cover no-repeat;
+}
+
+.container_contact {
+    width: 100%;
+    height: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+.container_cell img {
+    margin-bottom: 15px;
+}
+
+.contact_inner,
+.contact_inner > h3,
+.contact_inner p {
+    color: white;
+}
+
+.message_me {
+    text-transform: uppercase;
+    margin-bottom: 45px
+}
+
+.who {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.who input {
+    width: 100%;
+    height: 35px;
+    margin-left: 25px;
+    font-size: 12px;
+    background: #d7dbe1;
+    color: #5d5d5e;
+}
+
+.who input:first-child {
+    margin-left: 0px;
+}
+
+.why textarea {
+    margin-top: 15px;
+    width: 100%;
+    height: 90px;
+    font-size: 12px;
+    background: #d7dbe1;
+    color: #5d5d5e;
+    text-align: start;
+}
+
+.social {
+    flex-direction: column;
+    justify-content: row;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.social img {
+    margin-left: 50px;
+}
+
+.send {
+    padding: 12px 18px;
+    border: 2px solid #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    background: none;
+    color: #fff;
+    margin: 30px 0px 75px;
+}
+
+/* geo
+=================*/
+.geo img {
+    max-width: 100%;
+}
+
+/* Copyright
+=================*/
+.copyright {
+    color: white;
+    background: #354051;
+    height: 100%;
+    max-height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

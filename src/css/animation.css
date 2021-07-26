@@ -1,0 +1,321 @@
+/* Nav
+=================*/
+@keyframes a{
+  0%{transform:translate( 0px, -50px);}
+  100%{transform:translate());opacity: 1;}}
+.logo{
+  animation: a 1s ease-in forwards;
+}
+.nav_link:nth-child(1) {
+  animation: a 1s ease-in forwards;
+}
+.nav_link:nth-child(2) {
+    animation: a 1s 0.5s ease-in forwards;
+}
+.nav_link:nth-child(3) {
+  animation: a 1s 1s ease-in forwards;
+}
+.nav_link:nth-child(4) {
+  animation: a 1s 1.5s ease-in forwards;
+}
+.nav_link:nth-child(5) {
+  animation: a 1s 2s ease-in forwards;
+}
+.nav_link:nth-child(6) {
+  animation: a 1s 2.5s ease-in forwards;
+}
+.nav_link:after {
+ content: "";
+    display: none;
+    width: 100%;
+    top: 100%;
+    padding-top: 5px;
+    border-bottom: 2px solid coral;
+    position: absolute;
+    z-index: 1;
+}
+a.nav_link:hover{
+    color: coral;
+}
+a.nav_link:active{
+    
+    transform: scale(1.1);
+}
+a.nav_link:hover:after {
+    display: block;
+}
+@keyframes botton{
+  0%{transform:translate( -500px, 0px);}
+  100%{transform:translate());opacity: 1;}}
+.botton input:nth-child(1){
+  animation: botton 1s 2s ease-in forwards;
+}
+.botton input:nth-child(2) {
+    animation: botton 1s 1.5s ease-in forwards;
+}
+.botton input:active{
+    color:coral;
+    border-color: coral;
+}
+/* Intro
+=================*/
+@keyframes b{
+  0%{transform:translate( -100%, 0px);}
+  100%{transform:translate());opacity: 1;}}
+h1{
+  animation: b 1s ease-in forwards;
+}
+h2{
+  animation: b 1s 0.5s ease-in forwards;
+}
+@keyframes loader {
+  10% {transform:rotate(-36deg)}
+  20%{transform:rotate(-72deg)}
+  30%{transform:rotate(-108deg)}
+  40%{transform:rotate(-144deg)}
+  50% {transform:rotate(-180deg)}
+  60% {transform:rotate(-216deg)}
+  70% {transform:rotate(-242deg)}
+  80% {transform:rotate(-278deg)}
+  90% {transform:rotate(-294deg)}
+  100%{transform:rotate(-360deg)}
+ } 
+@keyframes span-1 {
+  0% {transform:translate(0);}
+  50%{transform:translate(-10px, 0);border-color:#7f30bf}
+  100%{transform:translate(0);}}
+@keyframes span-2 {
+  0%{transform:translate(0);}
+  50%{transform:translate(10px, 0);border-color:#7abf30}
+  100%{transform:translate(0);}}
+@keyframes span-3 {
+  0%{transform:translate(0);}
+  50%{transform:translate(0, -10px);border-color:#30bbbf}
+  100%{transform:translate(0);}}
+@keyframes span-4 {
+  0%{transform:translate(0);}
+  50%{transform:translate(0, 10px);border-color:#bf3034}
+  100%{transform:translate(0);}}
+@keyframes span-5 {
+  0%{transform:translate(0);}
+  50%{transform:translate(10px, -10px);border-color:#30bf51}
+  100%{transform:translate(0);}}
+@keyframes span-6 {
+  0%{transform:translate(0);}
+  50%{transform:translate(-10px, 10px);border-color:#bf3085}
+  100%{transform:translate(0);}}
+@keyframes span-7 {
+  0%{transform:translate(0);}
+  50%{transform:translate(-10px, -10px);border-color:#305ebf}
+  100%{transform:translate(0);}}
+@keyframes span-8 {
+  0%{transform:translate(0);}
+  50%{transform:translate(10px, 10px);border-color:#bf9a30}
+  100%{transform:translate(0);}}
+
+.loader_inner {
+  width: 10px;
+  height: 10px;
+    margin-right: 20px;
+  position: relative;
+  animation: loader 20s infinite ease-in-out;
+}
+
+.loader_inner span {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px double #344051;
+}
+.loader_inner span:nth-child(1) {
+  animation: span-1 2s ease-in-out infinite;
+}
+.loader_inner span:nth-child(2) {
+  animation: span-2 2s ease-in-out infinite;
+}
+.loader_inner span:nth-child(3) {
+  animation: span-3 2s ease-in-out infinite;
+}
+.loader_inner span:nth-child(4) {
+  animation: span-4 2s ease-in-out infinite;
+}
+.loader_inner span:nth-child(5) {
+  animation: span-5 2s ease-in-out infinite;
+}
+.loader_inner span:nth-child(6) {
+  animation: span-6 2s ease-in-out infinite;
+}
+.loader_inner span:nth-child(7) {
+  animation: span-7 2s ease-in-out infinite;
+}
+.loader_inner span:nth-child(8) {
+  animation: span-8 2s ease-in-out infinite;
+}
+/*======INFO==========*/
+
+@keyframes span_fon-1 {
+    0% {
+        transform: translate(0px,  0px  )
+    }
+    50%{
+        transform: translate(0px,  -500px)
+    } 
+    100%{
+        transform: translate(0px,  0px)
+    }
+}
+@keyframes span_fon-2 {
+    0% {
+        transform: translate(0px,  0px  )
+    }
+    25%{
+        transform: translate(-500px,  0px)
+    } 
+    50%{
+        transform: translate(-500px,  100px)
+    }
+    75%{
+        transform: translate(0px,  100px)
+    }
+    100%{
+        transform: translate(0px,  0px)
+    }
+}
+@keyframes span_fon-3 {
+    0% {
+        transform: translate(0px,  0px  )
+    }
+    25%{
+        transform: translate(0px,  300px)
+    } 
+    50%{
+        transform: translate(-300px,  300px)
+    }
+    75%{
+        transform: translate(-300px,  0px)
+    }
+    100%{
+        transform: translate(0px,  0px)
+    }
+}
+@keyframes span_fon-4 {
+    0% {
+        transform: translate(0px,  0px  )
+    }
+    25%{
+        transform: translate(-1000px,  0px)
+    } 
+    50%{
+        transform: translate(-1000px,  -300px)
+    }
+    75%{
+        transform: translate(-1000px, 0px)
+    }
+    100%{
+        transform: translate(0px,  0px)
+    }}
+@keyframes span_fon-5 {
+    0% {
+        transform: translate(0px,  0px  )
+    }
+    25%{
+        transform: translate(1500px,  0px)
+    } 
+    50%{
+        transform: translate(1500px,  -500px)
+    }
+    75%{
+        transform: translate(1500px, 0px)
+    }
+    100%{
+        transform: translate(0px,  0px)
+    }}
+.capsul {
+    position: absolute;
+    max-width: 100vw;
+    max-height: 100hw;
+}
+
+.fon {
+    position: relative;
+}
+
+.fon span {
+    opacity: 0.25;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    border-radius: 5px;
+    background: orange;
+}
+
+.fon span:nth-child(1) {
+    margin: 0px 200px;
+    width: 350px;
+    height: 600px;
+    animation: span_fon-1 30s infinite ease-in-out;
+    z-index: -1;
+}
+
+.fon span:nth-child(2) {
+    margin: -300px -400px;
+    width: 400px;
+    height: 250px;
+    animation: span_fon-2 24s infinite ease-in-out;
+    z-index: -1;
+}
+.fon span:nth-child(3) {
+    margin: -300px -400px;
+    width: 400px;
+    height: 550px;
+    animation: span_fon-3 16s infinite ease-in-out;
+    z-index: -1;
+}
+.fon span:nth-child(4) {
+    margin: 300px 400px;
+    width: 400px;
+    height: 550px;
+    animation: span_fon-4 18s infinite ease-in-out;
+    z-index: -1;
+}
+.fon span:nth-child(5) {
+    margin: 100px -700px;
+    width: 800px;
+    height: 600px;
+    animation: span_fon-5 20s infinite ease-in-out;
+    z-index: -1;
+}
+.knopka a:active, .knopka:active{
+   color:coral;
+    border-color:coral;
+}
+/*
+        Skills
+*/
+@keyframes spin {
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    25%{
+        transform:  rotate(-15deg) scale(1.2);
+    } 
+    50%{
+        transform:  rotate rotate(0deg) scale(1.2);
+    }
+    75%{
+        transform:  rotate(15deg) scale(1.2);
+    }
+    100%{
+        transform:  rotate(0) scale(1.2);
+    }}
+.cell img:hover{
+    animation: spin 1.5s ease-in-out;
+}
+.contact_me input:active{
+   color:coral;
+    border-color:coral;
+}
